@@ -1,62 +1,53 @@
-# Toán tử số học (Arithmetic Operators)
-a, b = 10, 3
+# operators.py - Guide to Operators in Python
 
-print(a + b)  # Cộng: 13
-print(a - b)  # Trừ: 7
-print(a * b)  # Nhân: 30
-print(a / b)  # Chia: 3.3333
-print(a // b)  # Chia lấy nguyên: 3
-print(a % b)  # Chia lấy dư: 1
-print(a ** b)  # Lũy thừa: 10^3 = 1000
+# 1. Arithmetic Operators
+x = 10
+y = 3
+print("Addition:", x + y)
+print("Subtraction:", x - y)
+print("Multiplication:", x * y)
+print("Division:", x / y)
+print("Floor Division:", x // y)  # Rounds down to nearest integer
+print("Modulus:", x % y)  # Remainder of division
+print("Exponentiation:", x ** y)  # x raised to the power of y
 
-# Toán tử so sánh (Comparison Operators)
-print(a == b)  # False
-print(a != b)  # True
-print(a > b)  # True
-print(a < b)  # False
-print(a >= b)  # True
-print(a <= b)  # False
+# 2. Comparison Operators
+print("Equal:", x == y)
+print("Not Equal:", x != y)
+print("Greater Than:", x > y)
+print("Less Than:", x < y)
+print("Greater or Equal:", x >= y)
+print("Less or Equal:", x <= y)
 
-# Toán tử gán (Assignment Operators)
-x = 5
-x += 3  # x = x + 3
+# 3. Logical Operators
+a = True
+b = False
+print("Logical AND:", a and b)
+print("Logical OR:", a or b)
+print("Logical NOT:", not a)
 
-print(x)  # 8
+# 4. Assignment Operators
+z = 5
+z += 2  # Equivalent to z = z + 2
+print("z after += 2:", z)
+z *= 3  # Equivalent to z = z * 3
+print("z after *= 3:", z)
 
-# Toán tử logic (Logical Operators)
-x, y = True, False
+# 5. Bitwise Operators
+p = 5  # 0b0101
+q = 3  # 0b0011
+print("Bitwise AND:", p & q)  # 0b0001
+print("Bitwise OR:", p | q)   # 0b0111
+print("Bitwise XOR:", p ^ q)  # 0b0110
+print("Bitwise NOT of p:", ~p) # Inverts all bits
+print("Left Shift:", p << 1)  # 0b1010
+print("Right Shift:", p >> 1)  # 0b0010
 
-print(x and y)  # False
-print(x or y)  # True
-print(not x)  # False
+# 6. Identity Operators
+print("Is:", x is y)
+print("Is Not:", x is not y)
 
-# Toán tử bitwise (Bitwise Operators)
-a, b = 5, 3  # 5 = 101, 3 = 011
-
-print(a & b)  # AND: 001 -> 1
-print(a | b)  # OR:  111 -> 7
-print(a ^ b)  # XOR: 110 -> 6
-print(~a)  # NOT: -6
-print(a << 1)  # Dịch trái: 1010 -> 10
-print(a >> 1)  # Dịch phải: 10 -> 2
-
-# Toán tử thành viên (Membership Operators)
-numbers = [1, 2, 3, 4]
-
-print(2 in numbers)  # True
-print(5 not in numbers)  # True
-
-# Toán tử danh tính (Identity Operators)
-a = [1, 2, 3]
-b = a
-c = [1, 2, 3]
-
-print(a is b)  # True (cùng địa chỉ)
-print(a is c)  # False (khác địa chỉ)
-print(a == c)  # True (cùng giá trị)
-
-# Toán tử ba ngôi (Ternary Operator)
-x, y = 10, 20
-min_value = x if x < y else y
-
-print(min_value)  # 10
+# 7. Membership Operators
+text = "Hello Python"
+print("'H' in text:", 'H' in text)
+print("'Z' not in text:", 'Z' not in text)
