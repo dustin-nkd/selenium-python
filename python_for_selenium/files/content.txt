@@ -1,0 +1,3 @@
+Hi, My name is Nguyen Khanh Duy
+I am a software test engineer from Vietnam
+Python is a easy programming language
