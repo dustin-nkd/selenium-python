@@ -1,4 +1,4 @@
-# webdriver_commands.py
+# web_browser_commands.py
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
