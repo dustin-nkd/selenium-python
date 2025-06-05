@@ -1,0 +1,9 @@
+2025-06-05 11:23:06,057 - DEBUG - This is a DEBUG message (useful for developers).
+2025-06-05 11:23:06,058 - INFO - This is an INFO message (general information).
+2025-06-05 11:23:06,058 - WARNING - This is a WARNING message (something unexpected).
+2025-06-05 11:23:06,058 - ERROR - This is an ERROR message (something failed).
+2025-06-05 11:23:06,058 - CRITICAL - This is a CRITICAL message (serious error).
+2025-06-05 11:23:06,058 - INFO - Trying to divide 10 by 2
+2025-06-05 11:23:06,058 - DEBUG - Result: 5.0
+2025-06-05 11:23:06,058 - INFO - Trying to divide 5 by 0
+2025-06-05 11:23:06,059 - ERROR - Division by zero is not allowed!
